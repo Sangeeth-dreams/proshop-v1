@@ -13,7 +13,8 @@
   "author": "Srihari Sangeeth",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
