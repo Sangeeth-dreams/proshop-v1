@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { From, Button, Col, Form } from "react-bootstrap";
+import { Button, Col, Form } from "react-bootstrap";
 import FormContainer from "../components/FormContainer";
 import CheckoutSteps from "../components/CheckoutSteps";
 import { savePaymentMethod } from "../slices/cartSlice";
@@ -38,7 +38,7 @@ const PaymentScreen = () => {
             <Form.Check
               type="radio"
               className="my-2"
-              label="Paypal orCredit Card"
+              label="Paypal or Credit Card"
               id="paymentMethod"
               value="Paypal"
               checked
