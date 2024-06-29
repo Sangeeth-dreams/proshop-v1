@@ -4,7 +4,6 @@ import { FaTimes, FaEdit, FaTrash } from "react-icons/fa";
 import Message from "../../components/Message";
 import Loader from "../../components/Loader";
 import { useGetProductsQuery } from "../../slices/productsApiSlice";
-import { white } from "colors";
 
 const ProductListScreen = () => {
   const { data: products, isLoading, error } = useGetProductsQuery();
