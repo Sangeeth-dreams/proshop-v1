@@ -55,6 +55,7 @@ const ProductListScreen = () => {
               <tr>
                 <th>ID</th>
                 <th>NAME</th>
+                <th>PRICE</th>
                 <th>CATEGORY</th>
                 <th>BRAND</th>
                 <th></th>
