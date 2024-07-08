@@ -7,9 +7,12 @@ import Paginate from "../components/Paginate";
 import { useGetProductsQuery } from "../slices/productsApiSlice";
 
 const HomeScreen = () => {
-  const { pageNumber } = useParams();
+  const { pageNumber, keyword } = useParams();
 
-  const { data, isLoading, error } = useGetProductsQuery({ pageNumber });
+  const { data, isLoading, error } = useGetProductsQuery({
+    pageNumber,
+    keyword,
+  });
 
   return (
     <>
@@ -29,7 +32,11 @@ const HomeScreen = () => {
               </Col>
             ))}
           </Row>
-          <Paginate pages={data.pages} page={data.page} />
+          <Paginate
+            pages={data.pages}
+            page={data.page}
+            keyword={keyword ? keyword : ""}
+          />
         </>
       )}
     </>
